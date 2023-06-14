@@ -1,0 +1,36 @@
+.section-hero {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 20rem;
+
+  @include respond(62.5em) { //1000px
+   padding: 0 5rem; 
+  }
+
+  @include respond (37.5em) { //600px
+    padding: 0 2rem;
+  }
+}
+
+.section-services {
+  background-color: $color-secondary;
+}
+
+.section-gallery {
+  background-color: $color-secondary;
+}
+
+.section-contact {
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.section-clients {
+  background-color: $color-secondary;
+}

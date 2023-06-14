@@ -1,0 +1,71 @@
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+
+  @include respond(62.5em) {
+    //1000px
+    grid-template-columns: 1fr;
+    grid-row-gap: 3rem;
+  }
+
+    /*---------- Contact main containers */
+  // &__text-box {
+
+  // }
+
+  &__testimonial {
+    background-color: $color-primary;
+    padding: 4rem 7rem;
+
+    @include respond(62.5em) {
+      //1000px
+      background-color: rgba($color-secondary, .9);
+    }
+  }
+
+    /*---------- Contact text-box decsendants */
+  &__heading-tertiary {
+    font-size: 2.5rem;
+    color: $color-primary;
+    margin-bottom: 3rem;
+  }
+
+  /*---------- Contact testimonial decsendants */
+  &__text {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    color: $color-quaternary;
+    border-left: 1px solid $color-secondary-m;
+    padding-left: 3rem;
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+  }
+
+  // &__info {
+
+  // }
+
+  &__name {
+    font-size: 1.5rem;
+
+    @include respond(62.5em) {
+      //1000px
+      color: $color-primary;
+    }
+  }
+
+  &__role {
+    color: $color-quaternary;
+  }
+}

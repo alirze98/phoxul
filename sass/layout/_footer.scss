@@ -1,0 +1,224 @@
+.footer {
+  background-image: linear-gradient(to bottom, $color-secondary-m-2, $color-secondary-m-2), url(../images/footer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+
+  /*---------- Footer main containers */
+  &__newsletter {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+
+    @include respond(37.5em) { //600px
+     flex-direction: column;
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 4rem;
+    border-top: 1px solid $color-tertiary;
+    border-bottom: 1px solid $color-tertiary;
+    margin-bottom: 3rem;
+
+    @include respond(62.5em) {
+      //1000px
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 2rem;
+    }
+  }
+
+  /*---------- Footer newsletter decsendants  */
+
+  &__text-box {
+    flex-basis: 50%;
+
+    @include respond(37.5em) { //600px
+     flex-basis: 100%;
+    }
+  }
+
+  &__heading-secondary {
+    font-size: 3rem;
+    color: $color-primary;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    color: $color-quaternary;
+  }
+
+  &__form {
+    flex-basis: 50%;
+
+    display: flex;
+    align-self: center;
+
+    @include respond(37.5em) { //600px
+     align-self: start;
+     flex-basis: 100%;
+    }
+  }
+
+  &__input,
+  &__submit {
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: none;
+    font-family: inherit;
+  }
+
+  &__input {
+    flex-basis: 63%;
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+    padding: 1.6rem 3rem;
+    background-color: transparent;
+    border: 1px solid $color-quaternary;
+    border-right: none;
+    font-size: 1.5rem;
+
+    @include respond(37.5em) { //600px
+      padding: 1rem 2.6rem;
+      flex-basis: 50%;
+    }
+  }
+
+  &__submit {
+    flex-basis: 37%;
+    background-color: $color-primary;
+    color: $color-secondary;
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    font-size: 1.5rem;
+
+    @include respond(37.5em) { //600px
+      padding: 0 1.5rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+
+  /*---------- Footer info decsendants */
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 2.5rem 3rem 0;
+
+    &:nth-child(1) {
+      align-self: center;
+      border-right: 1px solid $color-tertiary;
+
+      @include respond(62.5em) {
+        //1000px
+        grid-column: 1 / -1;
+      }
+
+      @include respond(37.5em) { //600px
+        border-right: none;
+      }
+
+    }
+
+    &:nth-child(2) {
+      border-right: 1px solid $color-tertiary;
+
+      @include respond(37.5em) { //600px
+        border-right: none;
+      }
+    }
+
+    &:nth-child(3) {
+      align-self: center;
+
+      @include respond(62.5em) {
+        //1000px
+        justify-self: end;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    color: $color-primary;
+    font-size: 2rem;
+  }
+
+  &__desc {
+    color: $color-quaternary;
+    font-size: 1.5rem;
+  }
+
+  &__heading-tertiary {
+    font-size: 2rem;
+    color: $color-primary;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  // &__links-item {}
+
+  &__link {
+    color: $color-quaternary;
+    font-size: 1.5rem;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  // &__contact-item {}
+
+  &__contact-link {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    color: $color-quaternary;
+
+    // i {}
+
+    // span {}
+  }
+
+  /*---------- Footer copyright */
+  .footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    color: $color-quaternary;
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 2rem;
+
+    // &-item {}
+
+    &-link {
+      font-size: 1.5rem;
+      color: $color-quaternary;
+
+      // i {}
+    }
+  }
+
+
+
+
+}

@@ -1,0 +1,22 @@
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+@import './base/animations';
+@import './base/base';
+@import './base/typography';
+@import './base/utilities';
+
+@import './components/hero';
+@import './components/btn';
+@import './components/about';
+@import './components/services';
+@import './components/news';
+@import './components/gallery';
+@import './components/contact';
+@import './components/clients';
+
+@import './layout/header';
+@import './layout/containre';
+@import './layout/footer';
+
+@import './pages/home';

@@ -1,0 +1,58 @@
+.btn {
+
+  /*---------- Btn */
+  &:link,
+  &:visited {
+    transition: .3s;
+  }
+
+  &--rounded:link,
+  &--rounded:visited,
+  &--fill:link,
+  &--fill:visited {
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+  }
+
+  /*---------- Btn rounded */
+  &--rounded:link,
+  &--rounded:visited {
+    border-radius: 100px;
+  }
+
+  /*---------- Btn fill */
+  &--fill:link,
+  &--fill:visited {
+    color: $color-secondary;
+    background-color: $color-primary;
+    border: 1px solid transparent;
+  }
+
+  &--fill:hover,
+  &--fill:active {
+    background-color: transparent;
+    color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  /*---------- Btn outline */
+  &--outline:link,
+  &--outline:visited {
+    color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+
+  &--outline:hover,
+  &--outline:active {
+    background-color: $color-primary;
+    color: $color-secondary;
+    border-color: transparent;
+  }
+
+  /*---------- Btn md */
+  &--md:link,
+  &--md:visited {
+    padding: 1.3rem 2.3rem;
+  }
+
+}

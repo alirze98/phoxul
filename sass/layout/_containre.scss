@@ -1,0 +1,11 @@
+.container {
+  padding:10rem 20rem ;
+
+  @include respond(62.5em) { //1000px
+   padding: 8rem 4rem; 
+  }
+
+  @include respond (37.5em) { //600px
+    padding: 3rem 2rem;
+  }
+}
